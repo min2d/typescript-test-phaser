@@ -1,4 +1,4 @@
-# typescript-test-phaser
+﻿# typescript-test-phaser
 
 phaser用サンドボックス
 
@@ -6,3 +6,4 @@ phaser用サンドボックス
 * ファイル統合はしてないのでapp.js内で完結させる
 * lib.jsはphaserに必要なライブラリをまとめたもの
 * index.htmlで動作確認が可能
+* 直下のtrsはトランスパイルのときパス通ってないからsh trsで呼べるようにしただけ

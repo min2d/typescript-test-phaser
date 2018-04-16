@@ -29,37 +29,7 @@ var MyState = (function (_super) {
     MyState.prototype.create = function () {
         console.log('test');
         this.game.stage.backgroundColor = "#dddddd";
-        var graphics = new MyGraphic(this.game, 750, 320);
-        var graphics2 = new MyGraphic(this.game, 50, 320);
     };
     return MyState;
 }(Phaser.State));
-var MyGraphic = (function (_super) {
-    __extends(MyGraphic, _super);
-    function MyGraphic(game, x, y) {
-        var _this = _super.call(this, game, x, y) || this;
-        _this.xBase = 30;
-        _this.yBase = 39;
-        var color1 = 0xd46a6a;
-        var color2 = 0xFFFFFF;
-        _this.drawDiamond(6, color1);
-        _this.drawDiamond(5.8, color2);
-        _this.drawDiamond(5.6, color1);
-        _this.drawDiamond(4.3, color2);
-        _this.drawDiamond(4.2, color1);
-        _this.drawDiamond(4.0, color2);
-        game.add.existing(_this);
-        return _this;
-    }
-    MyGraphic.prototype.drawDiamond = function (dia, col) {
-        this.beginFill(col);
-        this.moveTo(0, -1 * this.yBase * dia);
-        this.lineTo(this.xBase * dia, 0);
-        this.lineTo(0, this.yBase * dia);
-        this.lineTo(-1 * this.xBase * dia, 0);
-        this.lineTo(0, -1 * this.yBase * dia);
-        this.endFill();
-    };
-    return MyGraphic;
-}(Phaser.Graphics));
 //# sourceMappingURL=app.js.map
