@@ -1,12 +1,13 @@
 {
 	"compilerOptions": {
-		"module": "CommonJS",
+		"module": "amd",
 		"noImplicitAny": true,
 		"removeComments": true,
 		"preserveConstEnums": true,
 		"sourceMap": true,
 		"moduleResolution": "node",
-		"outDir": "./bin/"
+		// "outDir": "./bin/"
+		"outFile": "./bin/app.js"
 	},
 	"include": [
 		"src/*.ts",
